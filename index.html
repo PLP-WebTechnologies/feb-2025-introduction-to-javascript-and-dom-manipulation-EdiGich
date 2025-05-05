@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic DOM Manipulation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        header,
+        main,
+        footer {
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        #message {
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin: 10px 0;
+        }
+
+        .highlight {
+            background-color: #ffeb3b;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>DOM Manipulation Using Javascript</h1>
+    </header>
+
+    <main id="main">
+        <section>
+            <p id="message">Welcome! Click the buttons below to see changes.</p>
+
+            <button id="changeTextBtn">Change Text</button>
+            <button id="toggleStyleBtn">Toggle Highlight</button>
+            <button id="addElementBtn">Add Item</button>
+            <button id="removeElementBtn">Remove Last Item</button>
+
+            <article id="itemList">
+                <h3>Dynamic Item List</h3>
+                <ul id="dynamicList">
+                    <li>Initial Item 1</li>
+                    <li>Initial Item 2</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; DOM Manipulation assignement week 5 PLP</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
